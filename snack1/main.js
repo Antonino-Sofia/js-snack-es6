@@ -29,3 +29,20 @@ const bikes = [
     peso: 5, //peso inferiore: 7
   },
 ];
+
+// SOLUZIONE
+
+let minWeight = bikes[0]["peso"];
+let minBike = bikes[0];
+
+for (let i = 1; i < bikes.length; i++) {
+  constBike = bikes[i];
+
+  if (minWeight >= currentBike.peso) {
+    minWeight = currentBike.peso;
+    minBike = currentBike;
+  }
+}
+
+console.log(minWeight);
+console.log(minBike);
