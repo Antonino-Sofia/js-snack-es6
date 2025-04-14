@@ -40,3 +40,12 @@ const teams = [
     falliSubiti: 0,
   },
 ];
+
+//Genero numeri randomici per punti fatti e per falli subiti
+
+for (let i = 0; i < teams.length; i++) {
+  const currentTeam = teams[i];
+
+  currentTeam.puntiFatti = Math.floor(Math.random() * 100) + 1;
+  currentTeam.falliSubiti = Math.floor(Math.random() * 50) + 1;
+}
