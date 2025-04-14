@@ -49,3 +49,22 @@ for (let i = 0; i < teams.length; i++) {
   currentTeam.puntiFatti = Math.floor(Math.random() * 100) + 1;
   currentTeam.falliSubiti = Math.floor(Math.random() * 50) + 1;
 }
+
+//ARRAY
+
+const result = [];
+
+for (let i = 0; i < teams.length; i++) {
+  const currentTeam = teams[i];
+
+  const { nome, falliSubiti } = currentTeam;
+}
+
+constNewTeam = {
+  nome: currentTeam.nome,
+  falliSubiti: currentTeam.falliSubiti,
+};
+
+result.push(newTeam);
+
+console.log(result);
